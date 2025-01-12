@@ -1,0 +1,13 @@
+pyserial==3.5
+
+opencv-python==4.8.1.78
+Pillow==10.0.0
+
+# API and network requests
+requests==2.31.0
+certifi==2023.7.22
+charset-normalizer==3.2.0
+idna==3.4
+urllib3==2.0.4
+
+pyttsx3==2.90
