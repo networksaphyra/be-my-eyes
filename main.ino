@@ -15,7 +15,8 @@ public:
         digitalWrite(trigger, LOW);
 
         float duration = pulseIn(echo, HIGH);
-        float distance = duration * 0.034/2;
+        float distance = duration * 0.034/2// Distance is in centimeters
+;
         return distance;
     }
 };
