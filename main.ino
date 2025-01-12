@@ -8,12 +8,14 @@ public:
   int get_echo() { return echo; }
 };
 
+const int TRIG_PIN = 4;
+const int ECHO_PIN = 3;
+
 void setup() {
   Serial.begin(9600);
-  UltrasonicSensor(3, 4) ultrasonic_sensor;
-  Serial.println(ultrasonic_sensor.get_trigger());
 }
 
 void loop() {
-
+  UltrasonicSensor(TRIG_PIN, ECHO_PIN) ultrasonic_sensor;
+  Serial.println(ultrasonic_sensor.get_trigger());
 }
